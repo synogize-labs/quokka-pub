@@ -1,0 +1,62 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* 重置 antd 按钮样式 */
+.ant-btn.ant-btn-primary {
+  background: #1677ff !important;
+  color: #ffffff !important;
+}
+
+.ant-btn.ant-btn-primary:hover {
+  background: #4096ff !important;
+}
+
+.ant-btn.ant-btn-primary:active {
+  background: #0958d9 !important;
+}
+
+.ant-btn.ant-btn-default {
+  background: #f0f2f5 !important;
+  color: rgba(0, 0, 0, 0.88) !important;
+  border-color: #d9d9d9 !important;
+}
+
+.ant-btn.ant-btn-default:hover {
+  background: #e6e8eb !important;
+  border-color: #1677ff !important;
+  color: #1677ff !important;
+}
+
+/* Ant Design 其他覆盖样式 */
+.ant-layout {
+  background: transparent;
+}
+
+.ant-layout-header {
+  height: 64px;
+  padding: 0 24px;
+  line-height: 64px;
+}
+
+.ant-spin-nested-loading {
+  width: 100%;
+}
